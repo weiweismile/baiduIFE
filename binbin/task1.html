@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>IFE JavaScript Task 01</title>
+</head>
+<body>
+   <label>请输入北京今天的空气质量： <input type="text" id="aqi-input"></label>
+   <button id="button">确认填写</button>
+   <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+  <script type="text/javascript">
+     (function(){
+     	document.getElementById('button').onclick=function(){
+     		document.getElementById('aqi-display').innerHTML=document.getElementById('aqi-input').value;
+     	}
+     })()
+     // 注意两点：（1）input这些表单可以使用value来获取内部的值
+     // （2）不要再getElementById()中傻逼的写上#，只需要写id的名字就好了
+  </script>
+</body>
+</html>
